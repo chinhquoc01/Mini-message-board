@@ -1,0 +1,10 @@
+extends layout 
+
+block content 
+  form.mb-3(method='POST' action='/new') 
+    label.form-label(for='mess') Enter your message 
+    input.form-control(id='mess' type ='text' name='text')
+    label.form-label(for='name') Enter your name 
+    input.form-control(id='name' type='text' name='user')
+    br
+    button.btn.btn-primary(type='submit') Submit 

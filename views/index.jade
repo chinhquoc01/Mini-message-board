@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p.h1 Welcome to my #{title}
+  a.btn.btn-primary.text-center(href='/new') Add 
+  each m in messages 
+    .container.card.d-flex.bd-highlight.justify-content-center.align-items-center
+      h5.card-title #{m.text} 
+      p.card-subtitle #{m.user} at #{m.added} 
+    br
+    br
+
